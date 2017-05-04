@@ -16,7 +16,7 @@
 
 ## You mentioned Webpack ?
 
-#### heck yeah, I webpacked a little bit...pretty satisfied
+#### Heck yeah, I webpacked a little bit...pretty satisfied
 ![ScreenShot](https://media.giphy.com/media/ZiDnfvNB4PjVu/giphy.gif)
 
 ### Accommodations include:
@@ -31,7 +31,7 @@
 ... but what more do you need?
 ##### dont answer that...just go ahead and add it and we'll call it even.
 
-## Now Get! I've #### barely ## set you up for success... now go build something awesome!
+## Now Get! I've **barely** set you up for success... now go build something awesome!
 ![ScreenShot](https://media.giphy.com/media/Y6AwlIxIW3Qkg/giphy.gif)
 
 
