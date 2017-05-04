@@ -11,8 +11,8 @@
 ### What's in the box!? 
 ![ScreenShot](https://media.giphy.com/media/jeDNRwEp5iQve/giphy.gif)
 
-  1. React (obvi 😜)
-  2. Simple Webpack config
+- React (obvi 😜)
+- Simple Webpack config
 
 #### yup, that's about it..quick and dirty 🤠... add whatever else your heart desires
 
