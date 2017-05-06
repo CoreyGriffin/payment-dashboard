@@ -4,7 +4,7 @@
 
 ### But hey, what about create-react-app?
 ![ScreenShot](https://media.giphy.com/media/y65VoOlimZaus/giphy.gif)
-#### -Yeah, about that...at least you don't have to eject now if you want to change something 🤔
+#### -Yeah, about that.......YOLO 🤔
 
 ---
 
