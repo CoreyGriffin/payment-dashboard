@@ -16,6 +16,7 @@
   "author": "Corey Griffin",
   "license": "ISC",
   "dependencies": {
+    "dateformat": "^2.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
