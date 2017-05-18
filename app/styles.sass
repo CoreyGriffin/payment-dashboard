@@ -6,10 +6,11 @@ html
   letter-spacing: 0.88px
   font-size: 14px
   font-weight: 400
-  color: #fff
+  line-height: 1.5
+  color: #C1C4C7
   background: #614385 /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #516395, #614385)  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #516395, #614385) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #5350C2, #9278D8) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 //remove default blue glow from elements
@@ -25,19 +26,38 @@ body
   overflow: scroll
 
 .container
-  background: rgba(58,65,80, 0.85)
-  max-width: 1200px
-  height: 700px
+  // background: rgba(34,40,52,0.9)
+  background: linear-gradient(to right, rgba(34,40,52,0.9), rgba(34,40,52,0.8),rgba(34,40,52,0.9) ) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  max-width: 1350px
+  height: auto
   margin: 3% auto
-  border-radius: 8px
-  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.25)
+  border-radius: 20px
+  box-shadow: 0 2px 30px 0 rgba(0,0,0,0.25)
+  padding-bottom: 130px
+  position: relative
+
+.add-btn
+  position: absolute
+  right: 85px
+  bottom: 35px
+  width: 60px
+  height: 60px
+  cursor: pointer
+  border-radius: 50%
+  border: none
+  background: #41E1D9
+  color: #fff
+  font-size: 2em
+  font-weight: 100
+  box-shadow: 0 2px 30px 0 rgba(0,0,0,0.5)
+
 
 .nav-wrapper
   height: auto
   min-height: 50px
-  border-radius: 8px 8px 0 0
-  background: rgba(58,65,80, 1)
-  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.25)
+  border-radius: 20px 20px 0 0
+  background: rgba(34,40,52,09)
+  box-shadow: 0 2px 30px 0 rgba(0,0,0,0.5)
   padding: 0 45px
   display: flex
   flex-direction: column
@@ -50,20 +70,22 @@ body
 
 .nav-upper .logo
   flex: 1
-  padding-top: 10px
+  padding-top: 5px
+  padding-left: 35px
 
 .nav-upper .input
   width: 400px
+  font-size: .95em
+  font-weight: 100
   flex: 2
   min-height: 25px
-  color: #fff
   border-radius: 3px
   margin-top: 10px
   padding: 6px 0 6px 10px
   border: none
   background: #000000  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #434343, #000000)  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05),rgba(255, 255, 255, 0.15) ) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(77, 82, 92,.75), rgba(77, 82, 92,.65),rgba(77, 82, 92,.75) ) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 input::-webkit-input-placeholder
   color: rgba(255, 255, 255, 0.65)
@@ -74,26 +96,29 @@ input::-webkit-input-placeholder
 .nav-lower
   width: 100%
   padding: 0
+  margin-top: 15px
 
 .navigation-list
+  width: 90%
   display: flex
   justify-content: space-around
   align-items: center
   flex-wrap: wrap
   padding: 0
-  margin-bottom: 0
+  margin: 0 auto
 
 .navigation-list li
   padding-right: 10px
-  font-weight: 100
+  font-weight: 300
   height: 20px
   position: relative
   padding: 8px 5px
 
 .navigation-list li:hover
   cursor: pointer
+  color: #8F79D5
 
-.navigation-list li.active:after
+.navigation-list li.active-tab:after
   content: ""
   width: 80px
   height: 2px
@@ -101,3 +126,189 @@ input::-webkit-input-placeholder
   background: #fff
   bottom: 0
   left: -5px
+
+.list-headers
+  display: flex
+  width: 90%
+  margin: 0 auto 15px auto
+  justify-content: space-around
+  padding: 20px 0 10px 20px
+  font-size: 0.85em
+  font-weight: 1000
+  border-bottom: 2px solid rgba(231,234,238,.05)
+
+.list-headers .header
+  flex: 1
+  text-align: left
+
+.list-headers .header:nth-child(1)
+  text-align: left
+  padding-left: 0
+  min-width: 280px
+  width: 290px
+
+.list-headers .header:nth-child(4)
+  text-align: center
+
+.list-headers .header:nth-child(8)
+  margin: 0
+  padding-right: 0
+
+.payments-list
+  overflow: scroll
+  max-height: 500px
+  height: 500px
+  display: flex
+  margin: 0 auto
+  font-weight: 500
+  padding: 0
+  flex-direction: column
+  max-width: 90%
+
+.payments-list .payment:nth-child(odd)
+  background: rgba(231,234,238,.045)
+  border-radius: 4px
+
+.payment
+  display: flex
+  align-items: center
+  justify-content: space-around
+  text-align: center
+  min-height: 51px
+  padding-right: 20px
+  text-transform: capitalize
+
+.payment span
+  flex: 1
+  text-align: center
+  padding: 15px 0
+  position: relative
+
+.payment .account-name
+  flex: 2
+  padding-left: 3em
+  text-align: left
+
+.payment .account-name:before
+  content: ""
+  position: absolute
+  width: 13px
+  height: 13px 
+  border: 2px solid #2B555C
+  left: 12px
+  top: 17px
+  border-radius: 50%
+
+.payment .account-number
+  min-width: 195px
+
+.payment .currency 
+  text-transform: uppercase
+
+.payment .account-balance,
+.payment .last-transfer
+  min-width: 145px
+
+.payment .trustworthiness
+  display: flex
+  flex: 1
+  position: relative
+  text-align: center
+  padding-right: 20px
+
+.payment .trustworthiness .standing
+  flex: 2
+
+.bookmark-solid.icon
+  position: absolute
+  margin-left: 8px
+  margin-top: 5px
+  width: 5px
+  height: 10px
+  border-radius: 1px 1px 0 0
+  border-top: solid 1px currentColor
+  border-left: solid 1px currentColor
+  border-right: solid 1px currentColor
+
+.bookmark-solid.icon:before 
+  content: ''
+  position: absolute
+  top: 8px
+  left: 0
+  width: 4px
+  height: 4px
+  border-top: solid 1px currentColor
+  border-left: solid 1px currentColor
+  -webkit-transform: rotate(45deg)
+          transform: rotate(45deg) 
+
+.perfect .bookmark-solid.icon
+  color: #56A75A
+
+.sufficient .bookmark-solid.icon
+  color: #3B96E0
+
+.poor .bookmark-solid.icon
+  color: #9133A2
+  
+.new .bookmark-solid.icon
+  color: #E0463F
+
+.payment .account-type,
+.payment .status
+  padding-right: 0
+
+.payment .status:before
+  content: ""
+  position: absolute
+  width: 8px
+  height: 8px 
+
+.active:before,
+.paused:before,
+.disabled:before
+  content: ""
+  position: absolute
+  width: 5px
+  height: 5px 
+  left: 10px
+  top: 22px
+  border-radius: 50%
+
+.active:before
+  background: #85B451
+
+.disabled:before
+  background: #EA5E7A
+
+.paused:before
+  background: #E1BB7D
+
+.more-circle
+  max-width: 20px
+  position: relative
+  cursor: pointer
+
+.more-circle:before 
+  content: ''
+  position: absolute
+  top: 12px
+  left: 5px
+  width: 2px
+  height: 2px
+  border-radius: 50%
+  border: solid 1px currentColor
+  background-color: currentColor
+
+.more-circle:after 
+  content: ''
+  position: absolute
+  top: 12px
+  left: 12px
+  width: 2px
+  height: 2px
+  border-radius: 50%
+  border: solid 1px currentColor
+  background-color: currentColor
+
+

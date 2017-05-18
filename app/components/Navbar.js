@@ -11,7 +11,7 @@ function Navbar() {
       <div className="nav-lower">
         <ul className="navigation-list">
           <li>Dashboard</li>
-          <li className="active">Accounts</li>
+          <li className="active-tab">Accounts</li>
           <li>Customers</li>
           <li>Cards</li>
           <li>Reports</li>

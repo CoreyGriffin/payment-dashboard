@@ -17,8 +17,8 @@ const payments = [
     account: generateRandomNumber(),
     balance: generateRandomBalance(),
     last_transfer: "10 Oct 2017",
-    trust: "Sufficient",
-    status: "Active"
+    trust: "sufficient",
+    status: "active"
   },
   {
     id: 2,
@@ -28,8 +28,8 @@ const payments = [
     account: generateRandomNumber(),
     balance: generateRandomBalance(),
     last_transfer: "26 Oct 2017",
-    trust: "Sufficient",
-    status: "Disabled"
+    trust: "sufficient",
+    status: "disabled"
   },
   {
     id: 3,
@@ -39,8 +39,8 @@ const payments = [
     account: generateRandomNumber(),
     balance: generateRandomBalance(),
     last_transfer: "2 Dec 2017",
-    trust: "Sufficient",
-    status: "Active"
+    trust: "sufficient",
+    status: "active"
   },
   {
     id: 4,
@@ -50,8 +50,8 @@ const payments = [
     account: generateRandomNumber(),
     balance: generateRandomBalance(),
     last_transfer: "02 Sep 2017",
-    trust: "Perfect",
-    status: "Active"
+    trust: "perfect",
+    status: "active"
   },
   {
     id: 5,
@@ -61,8 +61,8 @@ const payments = [
     account: generateRandomNumber(),
     balance: generateRandomBalance(),
     last_transfer: "10 Dec 2017",
-    trust: "Perfect",
-    status: "Active"
+    trust: "perfect",
+    status: "active"
   },
   {
     id: 6,
@@ -72,8 +72,8 @@ const payments = [
     account: generateRandomNumber(),
     balance: generateRandomBalance(),
     last_transfer: "12 Dec 2017",
-    trust: "Unsufficient",
-    status: "Paused"
+    trust: "poor",
+    status: "paused"
   },
   {
     id: 7,
@@ -83,8 +83,8 @@ const payments = [
     account: generateRandomNumber(),
     balance: generateRandomBalance(),
     last_transfer: "27 Apr 2017",
-    trust: "New",
-    status: "Active"
+    trust: "new",
+    status: "active"
   },
   {
     id: 8,
@@ -94,8 +94,8 @@ const payments = [
     account: generateRandomNumber(),
     balance: generateRandomBalance(),
     last_transfer: "05 Aug 2017",
-    trust: "Sufficient",
-    status: "Active"
+    trust: "sufficient",
+    status: "active"
   },
   {
     id: 9,
@@ -105,8 +105,41 @@ const payments = [
     account: generateRandomNumber(),
     balance: generateRandomBalance(),
     last_transfer: "30 Oct 2017",
-    trust: "Sufficient",
-    status: "Active"
+    trust: "sufficient",
+    status: "active"
+  },
+    {
+    id: 10,
+    account_name: "Havanah Bread Co.",
+    currency: "USD",
+    type: "Business",
+    account: generateRandomNumber(),
+    balance: generateRandomBalance(),
+    last_transfer: "30 Jun 2017",
+    trust: "sufficient",
+    status: "active"
+  },
+  {
+    id: 11,
+    account_name: "JoJo's Coffee INC",
+    currency: "EUR",
+    type: "Business",
+    account: generateRandomNumber(),
+    balance: generateRandomBalance(),
+    last_transfer: "30 Jan 2017",
+    trust: "poor",
+    status: "disabled"
+  },
+    {
+    id: 12,
+    account_name: "Riley Hansen",
+    currency: "USD",
+    type: "Private",
+    account: generateRandomNumber(),
+    balance: generateRandomBalance(),
+    last_transfer: "30 Jun 2017",
+    trust: "new",
+    status: "active"
   }
 ]
 
